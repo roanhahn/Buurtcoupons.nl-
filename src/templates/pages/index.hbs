@@ -1,0 +1,30 @@
+---
+title: Aanbiedingen, acties en kortingen in de buurt van Enschede
+description: Profiteer van leuke kortingen in de buurt van Enschede. Momenteel hebben we 16 aanbiedingen!
+layout: default.hbs
+---
+
+{{> partial-header }}
+
+
+<section class="coupons">
+	
+	<!--<div class="container">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2 text-center">
+				<h1 class="coupon-h1">Profiteer nu van <strong>leuke kortingen</strong> in de buurt! </h1>
+			</div>
+		</div>
+	</div>-->
+	<!-- 1-4 coupons -->
+	{{> partial-owl }}
+	<!-- 5-8 coupons -->
+	{{> partial-owl-2 }}
+	<!-- 9-12 coupons -->
+	{{> partial-owl-3 }}
+	<!-- 13-16 coupons -->
+	{{> partial-owl-4}}
+
+</section>
+{{> partial-modal }}
+{{> partial-footer }}

@@ -1,0 +1,180 @@
+.header{
+	height: 100px;
+	background-color: $primary-color;
+	overflow: hidden;
+	/*-webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.2);
+	-moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.2);
+	box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.2);*/
+
+	@media screen and (max-width: 767px){
+		height: 50px;
+	}
+}
+
+.header-logo{
+	color: #fff;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 700;
+	height: 57px;
+	width: 254px;
+	line-height: 57px;
+	padding: 0px 29px;
+	/*background: transparent url(../img/logo.png) no-repeat center center scroll;*/
+	background-size: 254px;
+
+	@media screen and (max-width: 767px){
+		height: 50px;
+		line-height: 50px;
+		font-size: 18px;
+		display: block;
+		padding: 0px 28px;
+		background-size: 223px;
+	}
+}
+
+.categorie{
+	background-color: #fff;
+	border-bottom: 1px solid #f6f6f6;
+	/*-webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.1);
+	-moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.1);
+	box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.1);*/
+}
+
+.categorie-list{
+
+}
+
+.categorie-list-item{
+	list-style-type: none;
+	float: left;
+	font-size: 14px;
+	line-height: 1;
+	font-weight: 400;
+	border-left: 1px solid #f6f6f6;
+	color: #000;
+
+	&:last-child{
+		border-right: 1px solid #f6f6f6;
+	}
+
+	@media screen and (max-width: 767px){
+		width: 100%;
+		float: none;
+		border-left: none;
+	}
+}
+
+.categorie-list-link{
+	padding: 25px 30px 21px;
+	cursor: pointer;
+	border-bottom: 4px solid #fff;
+	white-space: nowrap;
+
+	@media screen and (max-width: 767px){
+		padding: 15px 20px 14px 0;
+		border-bottom: 1px solid #f6f6f6;
+	}
+
+	&:before{
+		display: inline-block;
+		font-family: "FontAwesome";
+		color: $primary-color;
+		width: 20px;
+		line-height: 1;
+		font-weight: normal;
+	}
+
+	&:hover{
+		border-color: $secondary-color;
+		&:before{
+			color: $secondary-color;
+		}
+	}
+}
+
+.categorie-list-eten-en-drinken:before{
+	content: "\f0f5";
+}
+.categorie-list-huis-en-tuin:before{
+	content: "\f015";
+}
+.categorie-list-mode-en-beauty:before{
+	content: "\f004";
+}
+.categorie-list-vrije-tijd:before{
+	content: "\f185";
+}
+
+.landing-hero{
+	min-height: calc(100% - 57px);
+	background: #fff url(../img/hero-landing.jpg) no-repeat center center scroll;
+	background-size: cover;
+	position: relative;
+	color: #fff;
+	padding: 30px 0;
+
+	@media screen and (max-width: 767px){
+		min-height: calc(100% - 50px);
+	}
+
+	&:before{
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0,0,0,0.30);
+	}
+
+	& h1{
+		font-weight: 700;
+		font-size: 48px;
+		color: #FFFFFF;
+		line-height: 53px;
+		text-shadow: 0px 2px 11px rgba(0,0,0,0.26);
+		margin-bottom: 30px;
+
+		@media screen and (max-width: 767px){
+			font-size: 27px;
+			line-height: 35px;
+		}
+	}
+}
+
+.landing-hero-content{
+	bottom: 0;
+	height: 50%;
+	left: 0;
+	margin: auto;
+	overflow: visible;
+	position: absolute;
+	right: 0;
+	top: 0;
+	@media screen and (max-width: 767px){
+		height: auto;
+		padding-top: 100px;
+		position: relative;
+		margin-bottom: 100px;
+	}
+}
+
+.how-to{
+	color: $primary-color;
+	padding: 50px 0;
+	font-size: 13px;
+	font-weight: 600;
+	border-bottom: 1px solid #f6f6f6;
+	background-color: rgba(51,37,116,.05);
+	border-bottom: 5px dotted #fff;
+
+	& i{
+		font-size: 30px;
+		font-weight: normal;
+		color: $secondary-color;
+		display: block;
+		margin-bottom: 5px;
+	}
+}
