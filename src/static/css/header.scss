@@ -164,16 +164,16 @@
 .how-to{
 	color: $primary-color;
 	padding: 50px 0;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 600;
 	border-bottom: 1px solid #f6f6f6;
 	background-color: rgba(51,37,116,.05);
 	border-bottom: 5px dotted #fff;
 
 	& i{
-		font-size: 30px;
+		font-size: 40px;
 		font-weight: normal;
-		color: $secondary-color;
+		color: $tertiary-color;
 		display: block;
 		margin-bottom: 5px;
 	}
